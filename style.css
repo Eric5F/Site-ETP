@@ -349,7 +349,7 @@ header{
     background: -webkit-linear-gradient(to right, #1565C0, #b92b27);
     background: linear-gradient(to right, #1565C0, #b92b27);
     width: 8rem;
-    height: 2.5rem;
+    height: 2rem;
     font-size: 1rem;
     color: #eee;
     border-radius: .5rem;
@@ -367,7 +367,7 @@ header{
     background: -webkit-linear-gradient(to right, #f5af19, #f12711);
     background: linear-gradient(to right, #f5af19, #f12711);
     width: 8rem;
-    height: 2.5rem;
+    height: 2rem;
     font-size: 1rem;
     color: #eee;
     border-radius: .5rem;
@@ -604,16 +604,16 @@ footer{
         border-bottom: solid 1px;
     }
     .btn-ctt{
-        margin-top: 5rem;
-        width:6rem;
+        margin-top: 2rem;
+        width:5rem;
         height: 2rem;
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
    
     .btn-res{
-        width:6rem;
+        width:5rem;
         height: 2rem;
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
    
 
@@ -675,15 +675,36 @@ footer{
         font-size: 0.7rem;
         margin-top: 0.2rem;
     }
+    .field{
+        width: 18rem;
+        font-size: 1.5rem;
+        height: 3rem;
+        margin: .5rem 0;
+    }
+    .input-group textarea{
+        height: 5rem;
+        padding-top: 1rem;
+        max-width: 18rem;
+        max-height: 7rem;
+    }
+    .field-label{
+        left: 0;
+        top: .7rem;
+        font-size: 1rem;
+    }
+    .field:focus ~ label{
+        top: 0;
+        font-size: .7rem;
+    }
     .btn-ctt{
-        margin-top: 3rem;
-        width:6rem;
+        margin-top: 1rem;
+        width:5rem;
         height: 2rem;
         font-size: 1.5rem;
     }
    
     .btn-res{
-        width:6rem;
+        width:5rem;
         height: 2rem;
         font-size: 1.5rem;
     }
