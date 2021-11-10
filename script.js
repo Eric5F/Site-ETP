@@ -8,13 +8,13 @@ document.querySelector(".hamburguer").addEventListener("click", () =>
 
 const ulSquares = document.querySelector("ul.squares");
 
-for (let i = 0; i < 30; i++){
+for (let i = 0; i < 20; i++){
     const li = document.createElement("li");
 
     const random = (min, max) => Math.random() * (max - min) + min;
 
-    const size = Math.floor(random(10, 120));
-    const position = random(1, 99);
+    const size = Math.floor(random(10, 80));
+    const position = random(1, 89);
     const delay = random(5,  0.1);
     const duration = random(24, 12);
 

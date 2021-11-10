@@ -21,45 +21,52 @@
             <div class="line" id="line3"></div>
             <span>Fechar</span>
         </div>
-        <section class="sessao-contato" id="contato">
-            <div class="contato-wrapper">
-                <div class="contato-left"></div>
-                <div class="contato-right">
-                    <h1>Orçamento</h1><br>
-                    <form action="https://api.staticforms.xyz/submit" method="POST">
-                        <input type="hidden" name="accessKey" value="741bedb2-6c54-49a4-aec1-56a37738208c">
-                        <input type="hidden" name="redirectTo" value="https://eric5f.github.io/Site-ETP/">
 
-                        <div class="input-group">
-                            <input type="text" class="field" id="nome" name="name" required>
-                            <label for="nome" class="field-label">Nome</label>
-                        </div>
-                        <div class="input-group">
-                            <input type="text" class="field" id="email" name="email" required>
-                            <label for="email" class="field-label">E-mail</label>
-                        </div>
-                        <div class="input-group">
-                            <input type="tel" id="telefone" class="field" name="phone" required placeholder="(xx) xxxxx-xxxx">
-                            <label for="telefone" class="field-label">Telefone</label>
-                        </div>
-                        <div class="input-group">
-                            <textarea name="message" class="field" id="mensagem" maxlength="100" required></textarea>
-                            <label for="mensagem" class="field-label">Mensagem</label>
-                        </div>
-                        
-                        <button type="submit" class="btn-ctt">Enviar</button><br>
-                        <input type="reset" class="btn-res" value="Limpar">
-                    </form>
-                </div>
-                <a class="whats-link" href="https://api.whatsapp.com/send?phone=5511983457247&text=Bem%20Vindo%20%C3%A0%20Eletrot%C3%A9cnica%20Pontes!!" target="_blank">
-                    <i class="fab fa-whatsapp"></i>
-                </a>
+       
+<section class="sessao-form">
+    <div class="form-container">
+
+        <h2>Contato</h2>
+
+        <form action="https://api.staticforms.xyz/submit" method="POST">
+            <input type="hidden" name="accessKey" value="741bedb2-6c54-49a4-aec1-56a37738208c">
+            <input type="hidden" name="redirectTo" value="https://eric5f.github.io/Site-ETP/">
+
+            <div class="input-group">
+                <input type="text" class="field" name="name" required>
+                <label class="field-label">Nome</label>
             </div>
-        </section>
+            <div class="input-group">
+                <input type="text" class="field" name="email" required>
+                <label class="field-label">E-mail</label>
+            </div>
+            <div class="input-group">
+                <input type="tel" class="field" name="phone" required>
+                <label class="field-label">Telefone</label>
+            </div>
+            <div class="input-group">
+                <textarea name="message" class="field" maxlength="100" required></textarea>
+                <label class="field-label">Mensagem</label>
+            </div>
+            
+            <button type="submit" class="btn-ctt">Enviar</button><br>
+            <input type="reset" class="btn-res" value="Limpar">
+
+        </form>
+
+    </div>
+</section>
+
+
+        <a class="whats-link" href="https://api.whatsapp.com/send?phone=5511983457247&text=Bem%20Vindo%20%C3%A0%20Eletrot%C3%A9cnica%20Pontes!!" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
 
         <ul class="squares">
-            
+    
         </ul>
+
+       </section>
     
         <aside class="sidebar">
             <nav>
@@ -72,6 +79,7 @@
                 </ul>
             </nav>
         </aside>
+
         <footer>
             <div class="footer-content">
                 <p>
