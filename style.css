@@ -571,23 +571,25 @@ footer{
         font-size: 0.6rem;
         margin-top: 0.2rem;
     }
-
-
+    .form-container{
+        width: 80%;
+    }
     .form-container h2{
         font-size: 2rem;
         height: 10%;
         margin-bottom: 1rem;
     }
     .field{
-        width: 9rem;
-        font-size: .8rem;
+        width: 14rem;
+        font-size: 1.5rem;
         height: 3rem;
         margin: .5rem 0;
     }
     .input-group textarea{
+        height: 5rem;
         padding-top: 1rem;
-        max-width: 9rem;
-        max-height: 3rem;
+        max-width: 14rem;
+        max-height: 7rem;
     }
     .field-label{
         left: 0;
@@ -603,15 +605,15 @@ footer{
     }
     .btn-ctt{
         margin-top: 5rem;
-        width: 4rem;
-        height: 1.5rem;
-        font-size: .7rem;
+        width:6rem;
+        height: 2rem;
+        font-size: 1.5rem;
     }
    
     .btn-res{
-        width: 4rem;
-        height: 1.5rem;
-        font-size: .7rem;
+        width:6rem;
+        height: 2rem;
+        font-size: 1.5rem;
     }
    
 
@@ -673,17 +675,17 @@ footer{
         font-size: 0.7rem;
         margin-top: 0.2rem;
     }
-
     .btn-ctt{
-        width: 4rem;
-        height: 1.5rem;
-        font-size: .7rem;
+        margin-top: 3rem;
+        width:6rem;
+        height: 2rem;
+        font-size: 1.5rem;
     }
    
     .btn-res{
-        width: 4rem;
-        height: 1.5rem;
-        font-size: .7rem;
+        width:6rem;
+        height: 2rem;
+        font-size: 1.5rem;
     }
 
     .projetos{
