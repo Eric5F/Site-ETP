@@ -666,9 +666,10 @@ footer{
         top: 15%;
         left: 50%;
         transform: translate(-50%,-50%);
-        font-size: 3vh;
+        font-size: 3.5vh;
         font-weight: 400;
         color: rgba(180, 15, 15, 0.938);
+        text-align: center;
     }
     .logo{
         max-width: 100px;
@@ -797,6 +798,7 @@ footer{
         font-size: 6vh;
         font-weight: 600;
         color: rgba(180, 15, 15, 0.938);
+        text-align: center;
     }
     .logo{
         max-width: 100px;
