@@ -32,29 +32,6 @@ for (let i = 0; i < 20; i++){
 };
 }
 
-function TrocaImagem(){
-
-    let fotos = ["Img-Center.png", "Monofasico.png","Prevencao.png","Bomba.png","Painel.png","Eletricista.png"];
-    
-    
-    function TrocarFoto(foto){
-    
-       
-        document.querySelector(".imagem-on").src = "Images/" + fotos[foto];
-    }
-    
-    
-     
-    let FotoAtual = 0;
-    TrocarFoto(FotoAtual);
-    
-    setInterval(function(){
-        FotoAtual++;
-        if(FotoAtual > 5){
-            FotoAtual = 0;
-        }
-        TrocarFoto(FotoAtual);
-    } , 3000);}
 
     function SelectionH2(){
 
@@ -75,3 +52,7 @@ function TrocaImagem(){
                 setActive(j)
             })
         }}
+
+    function Mensagem(){
+        alert("Mensagem enviada com Sucesso");
+    }

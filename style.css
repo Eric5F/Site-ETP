@@ -314,7 +314,7 @@ header{
     background: transparent;
     border: none;
     width: 20rem;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-family:'Fontep', serif;
     border-bottom: 2px dashed #636363;
     height: 3rem;
@@ -330,14 +330,13 @@ header{
 .field-label{
     position: absolute;
     left: 0;
-    top: 2rem;
+    top: 0;
     font-size: 1.2rem;
     font-family:'Fontep', serif;
     text-transform: uppercase;
     transition: all 0.3s;
 }
 .field:focus ~ label{
-    top: 0;
     font-size: 1rem;
 }
 .field:focus{
@@ -625,7 +624,7 @@ footer{
     }
     .field{
         width: 14rem;
-        font-size: 1.5rem;
+        font-size: 1rem;
         height: 3rem;
         margin: .5rem 0;
     }
@@ -637,11 +636,9 @@ footer{
     }
     .field-label{
         left: 0;
-        top: .7rem;
         font-size: 1rem;
     }
     .field:focus ~ label{
-        top: 0;
         font-size: .7rem;
     }
     .field:focus{
@@ -752,7 +749,7 @@ footer{
     }
     .field{
         width: 18rem;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         height: 3rem;
         margin: .5rem 0;
     }
@@ -764,11 +761,9 @@ footer{
     }
     .field-label{
         left: 0;
-        top: .7rem;
         font-size: 1rem;
     }
     .field:focus ~ label{
-        top: 0;
         font-size: .7rem;
     }
     .btn-ctt{
@@ -872,6 +867,9 @@ footer{
         font-size: 0.8rem;
         margin-top: 0.1rem;
     }
+    .field{
+        font-size: 1.2rem;
+    }
     .btn-ctt{
         width: 7rem;
         height: 2rem;
@@ -959,6 +957,9 @@ footer{
     .conhecimento-text{
         font-size: 0.8rem;
         margin-top: 0.1rem;
+    }
+    .field{
+        font-size: 1.3rem;
     }
     
     .propaganda{
