@@ -10,6 +10,7 @@
     font-family: 'FonteButton';
     src: url("./Fontes/Mulish-Italic-VariableFont_wght.ttf");
 }
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
 
 *{
     margin: 0;
@@ -29,7 +30,7 @@
     flex-direction: column;
     justify-content: space-evenly;
     cursor: pointer;
-    transition: all 1.5s;
+    transition: all 1s;
 }
 .show-menu .hamburguer{
     right: 16rem;
@@ -197,7 +198,6 @@ header{
 
 
 .sessao-conhecimento{
-    background-color: cadetblue;
     width: 100%;
     height: 100vh;
 }
@@ -218,7 +218,7 @@ header{
     display: grid;
     grid-template-columns: repeat(16, 1fr);
     grid-template-rows: repeat(6, 6rem);
-    row-gap: 0.5rem;
+    row-gap: 0.1rem;
 }
 .conhecimento:nth-child(1){
     grid-column: 4 / 7;
@@ -254,12 +254,12 @@ header{
 }
 .conhecimento-header h3{
     font-family: 'FonteButton', serif;
-    font-size: 2rem;
-    padding: 1rem;
+    font-size: 1.5rem;
+    padding: 0.7rem;
 }
 .conhecimento-text{
     font-family: 'FonteButton', serif;
-    margin-top: 0.5rem;
+    margin-top: 0.4rem;
 }
 .conhecimentos-img-wrapper{
     grid-column: 7 / 11;
@@ -268,7 +268,7 @@ header{
 }
 .imagem-on{
     object-fit: cover;
-    width: 100%;
+    width: 80%;
 }
 
 .container{
@@ -386,95 +386,114 @@ header{
     background: -webkit-linear-gradient(to right, #240b36, #c31432);
     background: linear-gradient(to right, #240b36, #c31432);    
 }
-.projetos{
-    display: flex;
-    justify-content: space-evenly;
+
+
+.sessao-vendas{
+    font-family: 'Ubuntu', sans-serif;
     width: 100%;
     height: 100vh;
+    background: linear-gradient(#1c1c1c,#323232);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
-.card{
-    width: 18rem;
-    height: 25rem;
+.sessao-vendas::before{
+    content: 'Eletro Tecnica Pontes';
+    font-family: 'FonteButton', serif;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 10vh;
+    font-weight: 700;
+    color: rgba(180, 15, 15, 0.938);
+}
+.logo{
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    z-index: 120;
+    padding: 0;
+    max-width: 150px;
+    background-color: rgb(235, 220, 11);
+    border: 2px solid black;
+}
+.propaganda{
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 0;
+    z-index: 120;
 }
-.card-img-wrapper{
+.propaganda h2{
+    font-size: 5em;
+    font-weight: 300;
+    color: seashell;
+    text-align: center;
+    margin-top: 80px;
+}
+.propaganda h2 span{
+    font-weight: 700;
+}
+
+.foto-produto{
+    max-width: 50%;
+    margin-top: 20px;
+}
+.dots{
+    display: flex;
+}
+.dots .dot{
+    width: 20px;
+    height: 20px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-top: 100px;
+}
+.dots .dot:hover{
+    background-color: aqua;
+}
+.dots .dot.active{
+    color: #eee;
+}
+.slider .slides{
+    position: absolute;
+    top: 60%;
+    left: 0;   
+    z-index: 120;
     width: 100%;
-    height: 100%;
-    border-radius: .5rem;
-    background-color: #262626;
-    
-}
-.card-img-wrapper img{
-    object-fit: contain;
-    width: 100%;
-    height: 100%;
-    border-radius: .5rem;
-    opacity: .8;
-    transition: opacity .3s;
-   
-}
-.card:hover .card-img-wrapper img{
-    opacity: .5;
-}
-.card-info{
+    display: flex;
+    justify-content: space-around;
+    transition: 0.25s;
     opacity: 0;
-    bottom: 0;
-    position: absolute;
-    bottom: 0;
-    padding: 2rem;
-    text-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, .4);
-    transition: all .3s;
+    pointer-events: none;
+    text-align: center;
 }
-.card-info h2{
-    font-family: 'Fonteh1';
-    font-size: 2rem;
-    font-weight: 500;
-    color: #eee;
-}
-.card-info h3{
-    font-family: 'Fontep';
-    font-weight: bolder;
-    color: red;
-    position: absolute;
-    right: 1rem;
-    top: -5rem;
-}
-.card-info p{
-    font-family: 'FonteButton', serif;
-    font-weight: 400;
-    color: #eee;
-    width: 80%;
-    margin-bottom: 2rem;
-}
-.card-info button{
-    font-family: 'FonteButton', serif;
-    background: #b92b27;
-    background: -webkit-linear-gradient(to right, #1565C0, #b92b27);
-    background: linear-gradient(to right, #1565C0, #b92b27);
-    width: 8rem;
-    height: 2.5rem;
-    font-size: 1rem;
-    color: #eee;
-    border-radius: .5rem;
-    box-shadow: 0 .1rem .8rem rgba(0, 0, 0, .4);
-    border: none;
-}
-.card-info button:hover{
-    background: #12c2e9;
-    background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
-    background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
-}
-.card:hover .card-info{
-    bottom: 2rem;
+.slider .slides.active{
     opacity: 1;
-    visibility: visible;
+    top: 50%;
+}
+.slider .slides h2{
+    color: #eee;
+    font-size: 3em;
+}
+.slider .slides h2 span{
+    color: #f12711;
+    font-size: 0.5em;
+    font-weight: 400;
+    font-style: italic;
 }
 
 
 
 footer{
     width: 100%;
-    height: 7rem;
+    height: 5rem;
     background-color: #17181b;
     display: flex;
     align-items: center;
@@ -528,6 +547,31 @@ footer{
     color: #a7a7a7;
 }
 
+.squares li{
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.15);
+    display: block;
+    position: absolute;
+    bottom: -40px;
+    animation: up 2s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes up{
+    from{
+        opacity: 0;
+        transform: translateY(0);
+    }
+    50%{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+        transform: translateY(-100vh) rotate(960deg);
+    }
+}
+
 
 @media screen and (max-width:426px) {
     header{
@@ -565,7 +609,7 @@ footer{
     }
     .conhecimento-header h3{
         font-size: 0.9rem;
-        padding: 0.7rem;
+        padding: 0.5rem;
     }
     .conhecimento-text{
         font-size: 0.6rem;
@@ -615,24 +659,53 @@ footer{
         height: 2rem;
         font-size: 1rem;
     }
-   
 
-    .projetos{
-        display: block;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+    .sessao-vendas::before{
+        content: 'Eletro Tecnica Pontes';
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-size: 3vh;
+        font-weight: 400;
+        color: rgba(180, 15, 15, 0.938);
     }
-    .card{
-        width: 15rem;
-        height: 13rem;
-        position: relative;
-        text-align: center;
-        margin-top: 2px;
-        justify-content: center;
-        align-items: center;
-        display: inline-block;
+    .logo{
+        max-width: 100px;
     }
+    .propaganda{
+        margin-top: 60px;
+    }
+    .propaganda h2{
+        font-size: 2.5em;
+        font-weight: 300;
+    }
+    .dots .dot{
+        width: 10px;
+        height: 10px;
+        margin-left: 10px;
+        margin-top: 150px;
+    }
+    .slider .slides{
+        top: 75%;
+        left: 0;   
+        justify-content: space-around;
+    }
+    .slider .slides.active{
+        opacity: 1;
+        top: 70%;
+    }
+    .slider .slides h2{
+        color: #eee;
+        font-size: 2em;
+    }
+    .slider .slides h2 span{
+        color: #f12711;
+        font-size: 0.5em;
+        font-weight: 400;
+        font-style: italic;
+    }
+
     footer{
         width: 100%;
         height: 4rem;
@@ -658,7 +731,7 @@ footer{
         height: 40px;
     }
 }
-@media screen and (min-width: 427px) and (max-width: 768px){
+@media screen and (min-width: 426px) and (max-width: 768px){
     
     .banner h1{
         font-size: 1.7rem;
@@ -669,7 +742,8 @@ footer{
     }
     .conhecimento-header h3{
         font-size: 1rem;
-        padding: 0.7rem;
+        padding: 0;
+        margin-top: 0;
     }
     .conhecimento-text{
         font-size: 0.7rem;
@@ -708,22 +782,60 @@ footer{
         height: 2rem;
         font-size: 1.5rem;
     }
-
-    .projetos{
-        display: block;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+    footer{
+        width: 100%;
+        height: 3rem;
     }
-    .card{
-        width: 20rem;
-        height: 15rem;
-        position: relative;
-        text-align: center;
-        margin-top: 3px;
-        justify-content: center;
-        align-items: center;
-        display: inline-block;
+
+
+    .sessao-vendas::before{
+        content: 'Eletro Tecnica Pontes';
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-size: 6vh;
+        font-weight: 600;
+        color: rgba(180, 15, 15, 0.938);
+    }
+    .logo{
+        max-width: 100px;
+    }
+    .propaganda{
+        margin-top: 60px;
+    }
+    .propaganda h2{
+        font-size: 3em;
+        font-weight: 300;
+    }
+    .foto-produto{
+        max-width: 50%;
+        margin-top: 20px;
+    }
+    .dots .dot{
+        width: 10px;
+        height: 10px;
+        margin-left: 10px;
+        margin-top: 200px;
+    }
+    .slider .slides{
+        top: 80%;
+        left: 0;   
+        justify-content: space-around;
+    }
+    .slider .slides.active{
+        opacity: 1;
+        top: 75%;
+    }
+    .slider .slides h2{
+        color: #eee;
+        font-size: 2em;
+    }
+    .slider .slides h2 span{
+        color: #f12711;
+        font-size: 0.5em;
+        font-weight: 400;
+        font-style: italic;
     }
     .footer-content{
         width: 90%;
@@ -746,17 +858,17 @@ footer{
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1069px){
+@media screen and (min-width: 769px) and (max-width: 1024px){
     .sessao-header h1{
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
     .conhecimento-header h3{
-        font-size: 1.5rem;
-        padding: 0.7rem;
+        font-size: 1.2rem;
+        padding: 0.2rem;
     }
     .conhecimento-text{
         font-size: 0.8rem;
-        margin-top: 0.2rem;
+        margin-top: 0.1rem;
     }
     .btn-ctt{
         width: 7rem;
@@ -769,21 +881,53 @@ footer{
         height: 2rem;
         font-size: 1rem;
     }
-    .projetos{
-        display: block;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+    .propaganda{
+        margin-top: 20px;
     }
-    .card{
-        width: 20rem;
-        height: 20rem;
-        position: relative;
-        text-align: center;
-        margin-top: 2px;
-        justify-content: center;
-        align-items: center;
-        display: inline-block;
+    .propaganda h2{
+        font-size: 3em;
+        font-weight: 300;
+    }
+    .foto-produto{
+        max-width: 50%;
+        margin-top: 40px;
+    }
+    .sessao-vendas::before{
+        content: 'Eletro Tecnica Pontes';
+        top: 10%;
+        font-size: 7vh;
+        font-weight: 600;
+        color: rgba(180, 15, 15, 0.938);
+    }
+    .slider .slides{
+        top: 80%;
+        left: 0;   
+        justify-content: space-around;
+    }
+    .slider .slides.active{
+        opacity: 1;
+        top: 75%;
+    }
+    .slider .slides h2{
+        color: #eee;
+        font-size: 2em;
+    }
+    .slider .slides h2 span{
+        color: #f12711;
+        font-size: 0.5em;
+        font-weight: 400;
+        font-style: italic;
+    }
+    .dots .dot{
+        width: 15px;
+        height: 15px;
+        margin-left: 10px;
+        margin-top: 100px;
+    }
+  
+    footer{
+        width: 100%;
+        height: 3rem;
     }
     .footer-content{
         width: 80%;
@@ -798,29 +942,58 @@ footer{
     #link-topo i{
         bottom: 70px;
     }
+
 }
 
-.squares li{
-    width: 40px;
-    height: 40px;
-    background-color: rgba(255, 255, 255, 0.15);
-    display: block;
-    position: absolute;
-    bottom: -40px;
-    animation: up 2s infinite;
-    animation-direction: alternate;
-}
 
-@keyframes up{
-    from{
-        opacity: 0;
-        transform: translateY(0);
+@media screen and (min-width: 1025px) and (max-width: 1440px){
+    .sessao-header h1{
+        font-size: 2rem;
     }
-    50%{
+    .conhecimento-header h3{
+        font-size: 1.2rem;
+        padding: 0.2rem;
+    }
+    .conhecimento-text{
+        font-size: 0.8rem;
+        margin-top: 0.1rem;
+    }
+    
+    .propaganda{
+        margin-top: 0;
+    }
+    .propaganda h2{
+        font-size: 3em;
+        font-weight: 300;
+        margin-top: 70px;
+    }
+    .foto-produto{
+        max-width: 50%;
+        margin-top: 20px;
+    }
+    .sessao-vendas::before{
+        content: 'EletroTecnica Pontes';
+        top: 15%;
+        font-size: 10vh;
+        font-weight: 500;
+    }
+    .slider .slides{
+        top: 65%;
+        left: 0;   
+        justify-content: space-around;
+    }
+    .slider .slides.active{
         opacity: 1;
+        top: 60%;
     }
-    to{
-        opacity: 0;
-        transform: translateY(-100vh) rotate(960deg);
+    .slider .slides h2{
+        color: #eee;
+        font-size: 2em;
+    }
+    .slider .slides h2 span{
+        color: #f12711;
+        font-size: 0.5em;
+        font-weight: 400;
+        font-style: italic;
     }
 }
