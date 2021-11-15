@@ -19,6 +19,8 @@
     list-style: none;
 }
 
+/*Página Inicial*/
+
 .hamburguer{
     width: 2rem;
     height: 2rem;
@@ -196,6 +198,7 @@ header{
     color: #6a3093;
 }
 
+/*Sessão Conhecimento*/
 
 .sessao-conhecimento{
     width: 100%;
@@ -277,6 +280,8 @@ header{
     background-size: cover;
 }
 
+/*Sessão Contato*/
+
 .sessao-form{
     width: 100%;
     height: 100vh;
@@ -299,7 +304,6 @@ header{
     font-size: 2.5rem;
     text-align: center;
     height: 10%;
-    margin-bottom: 1rem;
 }
 .form-container form{
     width: 100%;
@@ -314,7 +318,7 @@ header{
     background: transparent;
     border: none;
     width: 20rem;
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-family:'Fontep', serif;
     border-bottom: 2px dashed #636363;
     height: 3rem;
@@ -331,13 +335,10 @@ header{
     position: absolute;
     left: 0;
     top: 0;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-family:'Fontep', serif;
     text-transform: uppercase;
     transition: all 0.3s;
-}
-.field:focus ~ label{
-    font-size: 1rem;
 }
 .field:focus{
     border-bottom: solid 1px;
@@ -380,13 +381,13 @@ header{
 
 }
 
+/*Sessão Projetos */
+
 .sessao-projetos{
     background: #c31432;
     background: -webkit-linear-gradient(to right, #240b36, #c31432);
     background: linear-gradient(to right, #240b36, #c31432);    
 }
-
-
 .sessao-vendas{
     font-family: 'Ubuntu', sans-serif;
     width: 100%;
@@ -488,7 +489,7 @@ header{
     font-style: italic;
 }
 
-
+/*Rodapé*/
 
 footer{
     width: 100%;
@@ -571,6 +572,8 @@ footer{
     }
 }
 
+/* 1º Media Screen */
+
 
 @media screen and (max-width:426px) {
     header{
@@ -614,6 +617,9 @@ footer{
         font-size: 0.6rem;
         margin-top: 0.2rem;
     }
+
+
+
     .form-container{
         width: 80%;
     }
@@ -623,7 +629,7 @@ footer{
         margin-bottom: 1rem;
     }
     .field{
-        width: 14rem;
+        max-width: 14rem;
         font-size: 1rem;
         height: 3rem;
         margin: .5rem 0;
@@ -638,24 +644,19 @@ footer{
         left: 0;
         font-size: 1rem;
     }
-    .field:focus ~ label{
-        font-size: .7rem;
-    }
-    .field:focus{
-        border-bottom: solid 1px;
-    }
     .btn-ctt{
         margin-top: 2rem;
         width:5rem;
         height: 2rem;
         font-size: 1rem;
     }
-   
     .btn-res{
         width:5rem;
         height: 2rem;
         font-size: 1rem;
     }
+
+
 
     .sessao-vendas::before{
         content: 'Eletro Tecnica Pontes';
@@ -729,7 +730,7 @@ footer{
         height: 40px;
     }
 }
-@media screen and (min-width: 426px) and (max-width: 768px){
+@media screen and (min-width: 426.1px) and (max-width: 768px){
     
     .banner h1{
         font-size: 1.7rem;
@@ -748,7 +749,7 @@ footer{
         margin-top: 0.2rem;
     }
     .field{
-        width: 18rem;
+        max-width: 14rem;
         font-size: 1.2rem;
         height: 3rem;
         margin: .5rem 0;
@@ -756,15 +757,12 @@ footer{
     .input-group textarea{
         height: 5rem;
         padding-top: 1rem;
-        max-width: 18rem;
+        max-width: 14rem;
         max-height: 7rem;
     }
     .field-label{
         left: 0;
         font-size: 1rem;
-    }
-    .field:focus ~ label{
-        font-size: .7rem;
     }
     .btn-ctt{
         margin-top: 1rem;
@@ -772,7 +770,6 @@ footer{
         height: 2rem;
         font-size: 1.5rem;
     }
-   
     .btn-res{
         width:5rem;
         height: 2rem;
@@ -855,7 +852,7 @@ footer{
     }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1024px){
+@media screen and (min-width: 768.1px) and (max-width: 1024px){
     .sessao-header h1{
         font-size: 2rem;
     }
@@ -946,7 +943,7 @@ footer{
 }
 
 
-@media screen and (min-width: 1025px) and (max-width: 1440px){
+@media screen and (min-width: 1024.1px) and (max-width: 1440px){
     .sessao-header h1{
         font-size: 2rem;
     }
